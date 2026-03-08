@@ -1,11 +1,18 @@
-import { motion } from 'framer-motion';
+"use client";
 
-const MotionWrapper = ({
+import React, { ReactNode } from "react";
+import { motion, MotionProps } from "framer-motion";
+
+interface MotionWrapperProps extends MotionProps {
+  children: ReactNode;
+}
+
+const MotionWrapper: React.FC<MotionWrapperProps> = ({
   children,
   initial = { opacity: 0 },
   animate = { opacity: 1 },
   exit = { opacity: 0 },
-  transition = { duration: 0.5, ease: 'easeInOut' }
+  transition = { duration: 0.5 },
 }) => {
   return (
     <motion.div

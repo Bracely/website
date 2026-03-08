@@ -20,7 +20,7 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^12.35.1",
     "lucide-react": "latest",
     "next": "latest",
     "react": "latest",

@@ -1,6 +1,6 @@
+"use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-
 const HeroSection: React.FC = () => {
   return (
     <section className="relative flex flex-col items-center justify-center h-screen text-white text-center px-4 overflow-hidden" style={{backgroundImage: 'url(/images/Background.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
