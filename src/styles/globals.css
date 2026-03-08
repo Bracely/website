@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================
+   GLOBAL STYLES FOR WORLD SPEECH DAY ZIMBABWE
+   ========================================== */
+
+/* Base body styles - applied to entire document */
+body {
+    /* Inter font: Modern, professional sans-serif font for excellent readability */
+    font-family: 'Inter', sans-serif;
+    /* Light gray background (#f9fafb) for reduced eye strain and modern appearance */
+    background-color: #f9fafb;
+    /* Dark gray text color (#1f2937) ensures high contrast and accessibility */
+    color: #1f2937;
+}
+
+/* Heading styles - applied to h1, h2, h3, h4, h5, h6 elements */
+h1, h2, h3, h4, h5, h6 {
+    /* Poppins font: Bold, distinctive font for headings and important text */
+    /* Provides visual hierarchy and draws attention to key content */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Link styles - applied to all anchor tags */
+a {
+    /* Remove default link underline for cleaner appearance */
+    text-decoration: none;
+    /* Use primary color (#1f2937) for consistent link styling */
+    /* Professional dark gray instead of traditional blue */
+    color: #1f2937;
+}
+
+/* Link hover state - changes when user hovers over a link */
+a:hover {
+    /* Underline appears on hover to provide visual feedback */
+    text-decoration: underline;
+}
+
+/* Button global styles */
+button {
+    /* Apply Tailwind CSS classes for consistent button styling across the site */
+    /* bg-primary: Dark gray background (professional color) */
+    /* text-white: White text for high contrast */
+    /* font-bold: Bold text weight for prominence */
+    /* py-2 px-4: Vertical padding of 8px, horizontal padding of 16px */
+    /* rounded-lg: Rounded corners for modern appearance */
+    /* shadow-md: Medium drop shadow for depth */
+    /* hover:bg-accent: Changes to medium gray on hover for interactive feedback */
+    /* transition duration-300: Smooth 300ms transition effect on all property changes */
+    @apply bg-primary text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-accent transition duration-300;
+}
+
+/* Container utility class for consistent content wrapping */
+.container {
+    /* mx-auto: Center container horizontally with auto left/right margins */
+    /* px-4: Add 16px horizontal padding for mobile-friendly content spacing */
+    @apply mx-auto px-4;
+}
